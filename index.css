@@ -69,8 +69,6 @@ ul {
     max-width: 1440px;
     background-color: var(--light);
     margin: 1rem auto;
-/*  */
-    /* border: 3px solid hotpink; */
 }
 
 .header-container,
