@@ -5,13 +5,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-    <title></title>
+    <title>BestBank</title>
 
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap" rel="stylesheet">
-        
-        <link rel="stylesheet" href="styles.css">
+    <!--GOOGLE FONT-->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="index.css">
+
 </head>
 
 <!-- 
@@ -21,72 +25,82 @@
  -->
 
  <body>
+
+    <main class="main-container">
     
-    <header class="header-container">
+        <header class="header-container">
 
-        <img src="assets/bestbank_logo.png" alt="">
+            <img src="assets/bestbank_logo.png" 
+                class="bestbank-logo"
+                alt="">
 
-        <nav class="menu-container">
-            <ul>
-                <li class="menu-item">
-                    Home
-                </li>
-                <li class="menu-item">
-                    Payments
-                </li>
-                <li class="menu-item">
-                    Savings
-                </li>
-                <li class="menu-item">
-                    Financing
-                </li>
-                <li class="menu-item">
-                    Stocks
-                </li>
-            </ul>
-        </nav>
+            <nav class="menu-container">
+                <ul class="menu">
+                    <li class="menu-item">
+                        Home
+                    </li>
+                    <li class="menu-item">
+                        Payments
+                    </li>
+                    <li class="menu-item">
+                        Savings
+                    </li>
+                    <li class="menu-item">
+                        Financing
+                    </li>
+                    <li class="menu-item">
+                        Stocks
+                    </li>
+                </ul>
+            </nav>
 
-    </header>
+        </header>
 
-    <section class="btns-container">
+        <section class="btns-container">
 
-        <button
-            class="pay-btn">
-            Pay
-        </button>
+            <button
+                class="pay-btn">
+                Pay
+            </button>
 
-        <button
-            class="transfer-btn">
-            Transfer
-        </button>
-    
-    </section>
-
-    <section class="accounts-spendings-container">
-       
-        <div class="accounts-container">
-            <h2 class="accounts-title">
-                Accounts
-            </h2>
-            <ul class="accounts-list" id="accounts-list">
-
-            </ul>
+            <button
+                class="transfer-btn">
+                Transfer
+            </button>
         
-        </div>
+        </section>
 
-        <div class="spendings-container">
-            <h2 class="spendings">
-                Spendings
-            </h2>
+        <section class="accounts-spendings-container">
+        
+            <div class="accounts-container">
+                <p class="accounts-title">
+                    Accounts
+                </p>
+                <ul class="accounts-list" id="accounts-list">
+                    <li>placeholder</li>
+                    <li>placeholder</li>
+                    <li>placeholder</li>
 
-            <ul class="spendings-list" id="spendings-list">
+                </ul>
+            
+            </div>
 
-            </ul>
+            <div class="spendings-container">
+                <p class="spendings">
+                    Spendings
+                </p>
 
-        </div>
-    
-    </section>
+                <ul class="spendings-list" id="spendings-list">
+                    <li>placeholder</li>
+                    <li>placeholder</li>
+                    <li>placeholder</li>
+                </ul>
 
+            </div>
+        
+        </section>
+
+    </main>
 
     <script src-"index.js"></script>
 
