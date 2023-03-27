@@ -16,34 +16,42 @@
 
 ### Overview
 
+Scrimba M4 bootcamp project: Best Bank
+[Scrim](https://scrimba.com/scrim/cocf84a259acc922196ded766)
+
 
 ### The challenge
 
 Requirements:
 - build it from scratch
 - follow the design
-[Figma design](https://www.figma.com/file/t3DY4Ln2mhqxiQB66ioCAz/BestBank-(Copy)?node-id=0%3A1&t=xnzNL3CbdPtOt7C7-0)
+[Figma design](https://www.figma.com/file/5OS7V37a4fo3WIDLL7YisW/BestBank-(Copy)?node-id=0-1&t=YMvZxkwdgvRu8CfE-0)
 - make sure you use
    - semantic HTML
    - hover
+      - select account - orange background
+      - button hover - orange
+      - menu hover - underline
    - container
    - group selectors
    - compound selectors
 
 Stretch goals:
-- column with spending bars
+- add column with spending bars
 - animated hover effect to buttons
 - fetch data from JS
-- click on account to change view (turns orange)
+- click on account to change view 
+  - account turns orange
+  - display spending from each account
 
 
  ### Screenshot
 
 ### Links
 
-- Scrim: [Scrim](https://scrimba.com/scrim/co66f4672bc42a373fbd1968f)
-- Github: [Github](https://github.com/casserole27/counter-app)
-- Live Site: [Live Site](https://www.clewisdev.com/counter-app/)
+[Scrim](https://scrimba.com/scrim/cocba4ac08b3c963968d84a7b)
+[Github](https://github.com/casserole27/bestbank)
+[Live Site](https://www.clewisdev.com/bestbank)
 
 ## My process
 
