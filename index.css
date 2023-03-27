@@ -123,7 +123,7 @@ ul {
     margin: 1.5rem 0;
 }
 
-.menu {
+nav ul {
     font-size: var(--fs-s);
     background-color: var(--orange);
     padding: .5rem;
@@ -132,6 +132,10 @@ ul {
     display: flex;
     justify-content: space-evenly;
 }
+
+nav ul li:nth-child(1) {
+    font-weight: 700;
+} 
 
 /****** BUTTONS STYLING ******/
 
@@ -165,21 +169,60 @@ button {
     width: 100%;
     font-size: var(--fs-s);
     font-weight: 700;
-    background-color: var(--orange);
+ 
     
 }
 
 .accounts-list li {
+    background-color: var(--white);
     padding: 2rem;
-    margin-bottom: .75rem;
+    margin-bottom: 1rem;
     border: 5px solid var(--dark-orange);
     border-radius: var(--br-soft);
 }
 
 .spendings-list li {
+    background-color: var(--orange);
     padding: .75rem;
     margin-bottom: 1rem;
     border-radius: var(--br-soft);
+}
+
+.spendings-list li:nth-child(1) {
+    max-width: 530px;
+}
+
+.spendings-list li:nth-child(2) {
+    max-width: 420px;
+}
+
+.spendings-list li:nth-child(3) {
+    max-width: 330px;
+}
+
+.spendings-list li:nth-child(4) {
+    max-width: 250px;
+}
+
+.spendings-list li:nth-child(5) {
+    max-width: 220px;
+}
+
+/****** ACTIVE STATES ******/
 
 
+nav ul li:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+
+button:hover,
+button:focus,
+button:active,
+.accounts-list li:hover,
+.accounts-list li:focus,
+.accounts-list li:active {
+    background-color: var(--orange);
+    cursor: pointer;
 }
