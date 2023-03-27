@@ -44,6 +44,9 @@ Stretch goals:
   - account turns orange
   - display spending from each account
 
+Personal stretch goal: 
+- responsiveness  
+
 
  ### Screenshot
 

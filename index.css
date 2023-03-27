@@ -14,17 +14,24 @@ https://coolors.co
 :root {
     
     /*COLORS*/
+
+    --black: 000000;
+    --white: #ffffff;
+    --light: #FDF7F4;
+    --orange: #FFD18C;
+    --dark-orange: #FFA724;
   
     
     /*BORDER RADIUS*/
-    --br-soft: 1rem;
+    --br-soft: .5rem;
+    --br-softer: 2rem;
     --br-round: 50%;
     
     /*FONT SIZES*/
     --fs-xs: 1rem;
-    --fs-s: 1.25rem;
-    --fs-m: 1.5rem;
-    --fs-l: 2.25rem;
+    --fs-s: 1.5rem;
+    --fs-m: 1.875rem;
+    --fs-l: 2.5rem;
     --fs-title: 2.5rem;
 }
 
@@ -38,20 +45,141 @@ https://coolors.co
 
 /******* GLOBAL STYLES *******/
 
-/*
-COLOR PALETTE
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: lightgray;
+    margin: 1rem;
+}
 
-BLACK: #000000
+p {
+    font-size: var(--fs-l);
+    font-weight: 700;
+    text-align: left;
+    margin-bottom: 1.5rem;
+}
 
-WHITE: #FFFFFF
-LIGHT: #FDF7F4
-
-ORANGE: #FFD18C
-DARK ORANGE: #FFA724
-*/
+ul {
+    list-style-type: none;
+}
 
 
-html, body {
-    margin: 0;
-    padding: 0;
+/****** LAYOUT ******/
+
+.main-container {
+    max-width: 1440px;
+    background-color: var(--light);
+    margin: 1rem auto;
+/*  */
+    /* border: 3px solid hotpink; */
+}
+
+.header-container,
+.menu-container {
+    background-color: var(--white);
+    text-align: center;
+}
+
+.header-container,
+.menu-container,
+.btns-container,
+.accounts-container,
+.spendings-container {
+    width: 100%;
+}
+
+.btns-container {
+    margin-bottom: 3rem;
+}
+
+.btns-container,
+.accounts-spendings-container {
+    background-color: var(--light);
+    margin: 0 auto 2.5rem auto;
+
+    display: flex;
+    justify-content: center;
+}
+
+.accounts-spendings-container {
+    max-width: 1000px;
+    margin: .5rem auto;
+}
+
+
+.accounts-container,
+.spendings-container {
+    padding: 0 1rem;
+}
+
+.accounts-container {
+    margin-right: 2.375rem;   
+}
+
+
+/****** HEADER STYLING ******/
+
+.bestbank-logo {
+    max-width: 375px;
+    margin: 1.5rem 0;
+}
+
+.menu {
+    font-size: var(--fs-s);
+    background-color: var(--orange);
+    padding: .5rem;
+    margin-bottom: 2rem;
+
+    display: flex;
+    justify-content: space-evenly;
+}
+
+/****** BUTTONS STYLING ******/
+
+button {
+    width: 275px;
+    font-family: 'Inter', sans-serif;
+    font-size: var(--fs-m);
+    font-weight: 700;
+    background-color: var(--white);
+    padding: 1rem 8rem;
+    border: 5px solid var(--dark-orange);
+    border-radius: var(--br-softer);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pay-btn {
+    margin-right: 2rem;
+}
+
+/****** LIST STYLING ******/
+
+.accounts-list {
+    margin-bottom: 5.5rem;
+}
+
+.accounts-list li,
+.spendings-list li {
+    width: 100%;
+    font-size: var(--fs-s);
+    font-weight: 700;
+    background-color: var(--orange);
+    
+}
+
+.accounts-list li {
+    padding: 2rem;
+    margin-bottom: .75rem;
+    border: 5px solid var(--dark-orange);
+    border-radius: var(--br-soft);
+}
+
+.spendings-list li {
+    padding: .75rem;
+    margin-bottom: 1rem;
+    border-radius: var(--br-soft);
+
+
 }
