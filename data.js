@@ -1,6 +1,6 @@
 export const accounts = [
     {
-        id: 1,
+        id: "1",
         title: "Main Account",
         balance: "6700.56",
         spendings: [
@@ -27,7 +27,7 @@ export const accounts = [
         ]
     },
     {
-        id: 2,
+        id: "2",
         title: "Expenses",
         balance: "5134.63",
         spendings: [
@@ -46,7 +46,7 @@ export const accounts = [
         ]
     },
     {
-        id: 3,
+        id: "3",
         title: "Savings",
         balance: "36500.12",
         spendings: []
