@@ -1,7 +1,7 @@
 /*
 Author: Cassie Lewis
 https://clewisdev.com
-Date: 
+Date: March 2023
 */
 
 /*
@@ -234,8 +234,8 @@ button:active,
     cursor: pointer;
 }
 
-/* .accounts-list li {
-    background-color: var(--orange);
-} */
+.orange {
+    background-color: var(--orange) !important;
+} 
 
 
