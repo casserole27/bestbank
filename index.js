@@ -17,6 +17,7 @@ function renderAccounts() {
         
         listItems += `
             <li 
+                class = "list"
                 data-account="${account.id}">
                 ${account.title}
             <span data-account="${account.id}">
@@ -27,7 +28,6 @@ function renderAccounts() {
 
     accountsList.innerHTML = listItems;
 };
-
 
 
 function renderSpendings(accountId) {
@@ -42,47 +42,40 @@ function renderSpendings(accountId) {
   
         targetAccount.spendings.forEach(function(spend){
         
-        listItems += `
+            listItems += `
             <li>
                 ${spend.category}
                 <span>
                 $${spend.spent}
                 </span>`
-        })
-    spendList.innerHTML = listItems;
-    
-    }
-};    
+        })       
+        spendList.innerHTML = listItems;
+    };
+};
+   
 
  
 /****** EVENT LISTENERS ******/
 
-    //!When a list item is clicked, change it's background to orange
-
-    //!Issues:
-    //! How to toggle or add/remove class on rendered list item
-    //! The CSS has a fair amount of compound selectors, how to do without using !important in CSS
-
-    let selectedListItem = null;
-
 accountsList.addEventListener("click", function(e) {
+    
     if (e.target.tagName === "LI") {
-    const clickedListItem = e.target;
     
-    // Remove the 'orange' class from the previously selected li element
-    if (selectedListItem && selectedListItem !== clickedListItem) {
-        selectedListItem.classList.remove("orange");
-    }
-    
-    // Add the 'orange' class to the clicked li element
-    clickedListItem.classList.toggle("orange");
-    selectedListItem = clickedListItem;
+        const listItems = document.querySelectorAll(".list")
+        listItems.forEach(function (listItem) {
+        listItem.style.backgroundColor = "#FFFFFF";
+        });
+
+        const clickedListItem = e.target;
+        clickedListItem.style.backgroundColor = "#FFD18C";
+    };    
+
 
     const target = e.target.dataset.account;
     if (target) {
         renderSpendings(target);
-    }
-    }
+    };
+    
 });
         
 
@@ -143,3 +136,16 @@ accountsList.addEventListener("click", function(e) {
     
     //     e.target.classList.add("orange")
           
+
+        // if (clickedListItem)
+    // clickedListItem.classList.add("selected")
+    // console.log(clickedListItem.classList)
+   
+    // // Remove the 'orange' class from the previously selected li element
+    // if (selectedListItem && selectedListItem !== clickedListItem) {
+    //     selectedListItem.classList.remove("orange");
+    // }
+    
+    // // Add the 'orange' class to the clicked li element
+    // clickedListItem.classList.toggle("orange");
+    // selectedListItem = clickedListItem;
