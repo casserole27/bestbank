@@ -49,12 +49,14 @@ Personal stretch goal:
 
 
  ### Screenshot
+ ![BestBank-mobile](assets/bestbank%20-%20mobile.png)
+ ![BestBank-desktop](assets/bestbank-desktop.png)
 
 ### Links
 
 [Scrim](https://scrimba.com/scrim/cocba4ac08b3c963968d84a7b)
 [Github](https://github.com/casserole27/bestbank)
-[Live Site](https://www.clewisdev.com/bestbank)
+[Live Site](https://www.clewisdev.com/bestbank/)
 
 ## My process
 

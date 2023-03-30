@@ -50,15 +50,14 @@ a {
     text-decoration: none;
 }
 
-p {
+h1, h2 {
     font-size: var(--fs-l);
-    font-weight: 700;
     text-align: left;
     margin-bottom: 1.5rem;
 }
 
 @media (max-width: 650px) {
-    p {
+    h1, h2 {
         font-size: var(--fs-m);   
         text-align: center;
     }
@@ -71,12 +70,14 @@ p {
     max-width: 1440px;
     background-color: var(--light);
     margin: 1rem auto;
+    border-radius: var(--br-soft);
 }
 
 .header-container,
 .menu-container {
     background-color: var(--white);
     text-align: center;
+    border-radius: var(--br-soft);
 }
 
 .header-container,
