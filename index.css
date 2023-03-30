@@ -178,6 +178,9 @@ button {
     display: flex;
     justify-content: center;
     align-items: center;
+
+    transition: background-color .5s ease-in;
+    transition: transform .2s ease-in;
 }
 
 .pay-btn {
@@ -244,7 +247,19 @@ button {
     max-width: 220px;
 }
 
+@media (max-width: 650px) {
 
+    .accounts-list {
+        margin-bottom: 2rem;
+    }
+    .accounts-list li,
+    .spendings-list li {
+        margin-bottom: .5rem;
+        flex-direction: column;
+        align-items: center;
+        gap: .5rem;
+    }
+}
 
 /****** HOVER ETC STATES AND ANIMATIONS ******/
 
@@ -261,6 +276,7 @@ nav ul li:hover {
 
 button:hover,
 button:focus,
+button:active,
 .accounts-list li:hover,
 .accounts-list li:focus {
     background-color: var(--orange);
@@ -268,5 +284,6 @@ button:focus,
     cursor: pointer;
 }
 
-
-
+.orange {
+    background-color: var(--orange) !important;
+} 
