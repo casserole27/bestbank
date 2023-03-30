@@ -54,9 +54,9 @@ Personal stretch goal:
 
 ### Links
 
-[Scrim](https://scrimba.com/scrim/cocba4ac08b3c963968d84a7b)
-[Github](https://github.com/casserole27/bestbank)
-[Live Site](https://www.clewisdev.com/bestbank/)
+- [Scrim](https://scrimba.com/scrim/cocba4ac08b3c963968d84a7b)
+- [Github](https://github.com/casserole27/bestbank)
+- [Live Site](https://www.clewisdev.com/bestbank/)
 
 ## My process
 
@@ -74,12 +74,46 @@ Personal stretch goal:
 
 ### Built with
 
+- semantic HTML5
 - CSS custom properties
+- CSS hover and animated effect
 - Responsive Web Design
+- vanilla JavaScript
 
 ### What I learned
 
+- More rendering lists: this was very similar to the Oldagram and Choreslist projects that I just completed. 
+- It is a matter of figuring out the correct logic depending on what the project is asking you to do with the list.
+- In this case, I rendered two lists using template literals so that I could insert the data from the accounts array, but then had to figure out how to uniquely identify list items so that the selected account is highlighted by the orange background color. This did not seem possible with toggling classes, do I applied the .style.backgroundColor to the elements.
+- I used .querySelectorAll to make sure all the elements background were changed to white, and then used "e.target" to change the clicked item to and orange background.
+- I used event delegation on the ul defined by "accountsList".
+
+```javascript
+accountsList.addEventListener("click", function(e) {
+    
+    if (e.target.tagName === "LI") {
+    
+        const listItems = document.querySelectorAll(".list")
+        listItems.forEach(function (listItem) {
+        listItem.style.backgroundColor = "#FFFFFF";
+        });
+
+        const clickedListItem = e.target;
+        clickedListItem.style.backgroundColor = "#FFD18C";
+    };    
+
+
+    const target = e.target.dataset.account;
+    if (target) {
+        renderSpendings(target);
+    };
+    
+});
+```
+
 ### Continued development
+
+- Since many of these projects have dealt with clickable li elements, I wonder if they should be buttons instead.
 
 
 ### Useful resources
