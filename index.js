@@ -5,8 +5,6 @@ import { accounts } from "./data.js"
 const accountsList = document.getElementById("accounts-list");
 const spendList = document.getElementById("spendings-list")
 
-renderAccounts()
-
 /****** FUNCTIONS ******/
 
 function renderAccounts() {
@@ -78,7 +76,7 @@ accountsList.addEventListener("click", function(e) {
     
 });
         
-
+renderAccounts();
 
 
 // const listItems = document.querySelectorAll("#accounts-list li")

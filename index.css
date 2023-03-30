@@ -45,6 +45,11 @@ body {
     background-color: lightgray;
 }
 
+a {
+    color: var(--black);
+    text-decoration: none;
+}
+
 p {
     font-size: var(--fs-l);
     font-weight: 700;
@@ -83,7 +88,7 @@ p {
 }
 
 .btns-container,
-.accounts-spendings-container {
+.info-container {
     background-color: var(--light);
     margin: 0 auto 2.5rem auto;
 
@@ -91,7 +96,7 @@ p {
     justify-content: center;
 }
 
-.accounts-spendings-container {
+.info-container {
     max-width: 1000px;
     margin: .5rem auto;
 }
@@ -112,9 +117,8 @@ p {
         margin: 0 auto;
     }
 
-  
     .btns-container,
-    .accounts-spendings-container {
+    .info-container {
         margin-bottom: 1rem;
         flex-direction: column;
         align-items: center;
@@ -284,6 +288,4 @@ button:active,
     cursor: pointer;
 }
 
-.orange {
-    background-color: var(--orange) !important;
-} 
+
