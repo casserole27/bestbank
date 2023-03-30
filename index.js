@@ -18,11 +18,12 @@ function renderAccounts() {
                 class = "list"
                 data-account="${account.id}">
                 ${account.title}
-            <span data-account="${account.id}">
-                    $${account.balance}
+            <span 
+                data-account="${account.id}">
+                $${account.balance}
             </span>     
             </li>`        
-        })
+        });
 
     accountsList.innerHTML = listItems;
 };
@@ -31,7 +32,7 @@ function renderAccounts() {
 function renderSpendings(accountId) {
     
     const targetAccount = accounts.filter(function(account) {
-        return account.id === accountId
+        return account.id === accountId;
     })[0]
 
     if (targetAccount) {
@@ -46,7 +47,7 @@ function renderSpendings(accountId) {
                 <span>
                 $${spend.spent}
                 </span>`
-        })       
+        });       
         spendList.innerHTML = listItems;
     };
 };
