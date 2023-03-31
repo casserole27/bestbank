@@ -9,7 +9,6 @@ Date: March 2023
 :root {
     
     /*COLORS*/
-
     --black: 000000;
     --white: #ffffff;
     --light: #FDF7F4;
@@ -50,14 +49,14 @@ a {
     text-decoration: none;
 }
 
-h1, h2 {
+h2 {
     font-size: var(--fs-l);
     text-align: left;
     margin-bottom: 1.5rem;
 }
 
 @media (max-width: 650px) {
-    h1, h2 {
+    h2 {
         font-size: var(--fs-m);   
         text-align: center;
     }
@@ -66,7 +65,7 @@ h1, h2 {
 
 /****** LAYOUT ******/
 
-.main-container {
+.root-container {
     max-width: 1440px;
     background-color: var(--light);
     margin: 1rem auto;
@@ -82,9 +81,7 @@ h1, h2 {
 
 .header-container,
 .menu-container,
-.btns-container,
-.accounts-container,
-.spendings-container {
+.btns-container {
     width: 100%;
 }
 
@@ -104,6 +101,7 @@ h1, h2 {
 
 .accounts-container,
 .spendings-container {
+    width: 100%;
     padding: 0 1rem;
 }
 
@@ -113,7 +111,7 @@ h1, h2 {
 
 @media (max-width: 650px) {
     
-    .main-container {
+    .root-container {
         padding: 0 1rem;
         margin: 0 auto;
     }

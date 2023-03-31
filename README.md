@@ -115,6 +115,17 @@ accountsList.addEventListener("click", function(e) {
 
 - Since many of these projects have dealt with clickable li elements, I wonder if they should be buttons instead.
 
+From code review:
+- [Scrim](https://scrimba.com/scrim/coa7f49308019dd3ed3ca291e)
+- HTML header tags go above main tags
+- place # in empty href so the page doesn't reload
+- reminder: button type of submit is for forms
+- make sure variables are descriptive, even for event delegation target
+
+- code for li items to reflect their values:
+```javascript
+`<li style="width:${55 + (spend.spent/100 * 3)}%">`
+```
 
 ### Useful resources
 

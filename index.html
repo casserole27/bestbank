@@ -27,30 +27,30 @@
 
  <body>
 
-    <main class="main-container">
+    <div class="root-container">
     
         <header class="header-container">
 
             <img src="assets/bestbank_logo.png" 
                 class="bestbank-logo"
-                alt="">
+                alt="BestBank logo">
 
             <nav class="menu-container">
                 
                 <ul class="menu">
                     <li class="menu-item">
-                        <a href="">Home</a></li>
+                        <a href="#">Home</a></li>
                     <li class="menu-item">
-                        <a href="">Payments</a>
+                        <a href="#">Payments</a>
                     </li>
                     <li class="menu-item">
-                        <a href="">Savings</a>
+                        <a href="#">Savings</a>
                     </li>
                     <li class="menu-item">
-                        <a href="">Financing</a>
+                        <a href="#">Financing</a>
                     </li>
                     <li class="menu-item">
-                        <a href="">Stocks</a>
+                        <a href="#">Stocks</a>
                     </li>
                 </ul>
             
@@ -58,45 +58,49 @@
 
         </header>
 
-        <section class="btns-container">
-
-            <button
-                type="submit"
-                class="pay-btn">
-                Pay
-            </button>
-
-            <button
-                type="submit"
-                class="transfer-btn">
-                Transfer
-            </button>
+        <main>
         
-        </section>
+            <section class="btns-container">
 
-        <section class="info-container">
-        
-            <div class="accounts-container">
-                <h1 class="accounts-title">
-                    Accounts
-                </h1>
-                
-                <ul class="accounts-list" id="accounts-list"></ul>
+                <button
+                    type="button"
+                    class="pay-btn">
+                    Pay
+                </button>
+
+                <button
+                    type="button"
+                    class="transfer-btn">
+                    Transfer
+                </button>
             
-            </div><!--close accounts container-->
+            </section>
 
-            <div class="spendings-container">
-                <h2 class="spendings">
-                    Spendings
-                </h2>
+            <section class="info-container">
+            
+                <div class="accounts-container">
+                    <h2 class="accounts-title">
+                        Accounts
+                    </h2>
+                    
+                    <ul class="accounts-list" id="accounts-list"></ul>
+                
+                </div><!--close accounts container-->
 
-                <ul class="spendings-list" id="spendings-list"></ul>
+                <div class="spendings-container">
+                    <h2 class="spendings">
+                        Spendings
+                    </h2>
 
-            </div><!-- close spendings container-->
-        
-        </section>
+                    <ul class="spendings-list" id="spendings-list"></ul>
 
-    </main>
+                </div><!-- close spendings container-->
+            
+            </section>
+
+        </main>
+
+    </div> <!--close root container-->
 
     <script src="index.js" type="module"></script>
 
